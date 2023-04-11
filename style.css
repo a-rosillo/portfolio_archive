@@ -2,8 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-    border: solid white 1px;
 }
 
 html {
@@ -13,14 +11,17 @@ html {
 }
 
 body {
-    background-color: lightgrey;
+    background-color: hsl(0, 0%, 90%);
+    padding: 0 20px;
 }
 
 header { 
     position: fixed;
+    left: 0px;
+    padding: 0 20px;
     width: 100%;
     z-index: 2;
-    background-color: lightgrey;
+    background-color: hsl(0, 0%, 90%);
     display: flex;
     justify-content: center;
 }
@@ -60,7 +61,7 @@ nav a {
 }
 
 nav a:hover {
-    color: lightgrey;
+    color: hsl(0, 0%, 90%);
     background-color: hsl(0, 0%, 20%);
 }
 
@@ -76,11 +77,36 @@ main .flex-container {
 #paragraph-about-me {
     flex-basis: 300px;
     flex-grow: 1;
+    margin-right: 10px;
 }
 
 #image-container {
-    flex-basis: 400px;
+    flex-basis: 300px;
     flex-grow: 0;
-    height: 400px;
+    height: 300px;
     overflow: hidden;
+    border-radius: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+#image-filter{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: relative;
+    top: -304px;
+    left: 0;
+    text-align: center;
+    padding-top: 30px;
+    color: whitesmoke;
+    line-height: 1.5rem;
+    visibility: hidden;
+}
+
+h3{
+    font-size: 1.5rem;
+    line-height: 3em;
 }
